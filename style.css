@@ -1,0 +1,39 @@
+body {
+  color: white;
+  background: #3f69ca;
+}
+
+span {
+  font-size: 30px;
+}
+
+#snapshot,
+#Result {
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px;
+}
+
+#Result_Emotion_Name,
+#Result_Emotion_Name_2 {
+  color: black;
+}
+
+.emotion_name {
+  font-size: 40px;
+}
+
+.emoji {
+  font-size: 48px;
+}
+
+label {
+  font-size: 14px;
+  color: rgb(236, 236, 51);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+button {
+  color: rgb(184, 184, 51);
+}

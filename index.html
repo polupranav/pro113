@@ -1,0 +1,77 @@
+ 
+<html>
+  <head>
+    <title>Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-warning heading">
+        Gesture Web App
+        <br>
+       <span>&#128077;</span>
+       <span>&#128078;</span>
+       <span>&#128079;</span>
+       <span>&#9757;</span>
+       <span>&#9996;</span>
+       
+      </h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you putting a thumbs up?<span>&#128077;</span></b>
+        <br>
+        <b style="color: black">Are you putting a thumbs down?<span>&#128078;</span></b>
+        <br>
+        <b style="color: red">Did you lose?</b>
+        <br>
+      </p>
+      <br><span>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="snapshot"></div>
+        <br><br>
+        <button id="SSB" onclick="snapshot()">capture image</button>
+      </div>
+    </span>   
+        <span>
+        <div class="col-md-4 col-sm-12 col-xs-12"></div>
+        <label>Prediction 1</label>
+        <p class="emotion_name" id="Result_Emotion_Name"></p>
+        <p class="emoji" id="update_emoji"></p>
+        
+        
+        </span>
+        <span>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Result - </label>
+        <div id="Result"></div>
+        <br><br>
+        <button id="RB" onclick="check()">Predict</button>
+      </div>
+    </span>
+
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
